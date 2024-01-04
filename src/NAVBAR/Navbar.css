@@ -4,37 +4,37 @@
 }
 body{
     overflow-x: hidden;
+ 
     /* background-color: black; */
 }
 .nav-bar{
-    /* filter: blur(8px); */
-    /* -webkit-filter: blur(8px); */
+
     background-color: rgba(255, 255, 255, 0.22);
-    /* border-radius: 16; */
+ 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter:blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    
+    position:fixed;
     width: 100%;
     height: 2cm;
     display: flex;
 }
 .Left-nav{
-    /* background-color: yellow; */
+
     width: 50%;
     height: 2cm;
-    /* z-index: ; */
+ 
 }
 .Right-nav{
-    /* background-color: rgb(0, 0, 0); */
+   
     width: 100%;
     height: 2cm;
 }
-#meenubutt{
-    width: 3cm;
-    height: 1.5cm;
+#meenubutt1{
     display: none;
-    cursor: pointer;
+}
+#meenubutt2{
+    display: none;
 }
 #ulman{
     display: flex;
@@ -42,26 +42,22 @@ body{
     right: 6cm;
 }
 .menlink{
+    padding: 6px;
     text-decoration: none;
-    font-size: 0.6cm;
+    font-size: 0.7cm;
     font-family: Arial black  ;
-    border-width: 5px;
-    color: rgb(255, 166, 0);
-    /* border-color: rgb(0, 0, 0); */
-    /* border-radius: 20px;
-    border-style: solid;
-    width: 4cm;
-    text-align: center; */
-    /* background-color: yellow; */
+    border-width: 10px;
+    color: rgb(214, 139, 0);
     width: 4cm;
     text-align: center;
     border-radius: 20px;
     height: 1cm;
-    /* Nimbus Sans */
-    /* color: black; */
+   position: relative;
+   top: 5px;   
 }
-.menlink:hover{
 
+.menlink:hover{
+    
     border-color: rgb(255, 196, 0);
     background-color: rgb(255, 196, 0);
     color: rgb(255, 255, 255);
@@ -69,24 +65,18 @@ body{
 
 .menli{
     display: flex;
-    padding: 0.2cm;
+    /* padding: 0.2cm; */
     position: relative;
-    /* bottom: 0cm; */
     top: 0.2cm;
     left: 2cm;
 }
-.m11{
-    display: flex;
-    position: relative;
-    left: 22cm;
-    bottom: 1.2cm;
-}
-.m1{
+
+#m1{
     background-color: rgb(255, 196, 2);
-        /* padding: 30px; */
+       
         width: 7cm;
         height: 1.4cm;
-        /* width: 50cm; */
+    
         border-style: solid;
         border-width: 0px;
 
@@ -96,6 +86,9 @@ body{
         text-align: left ;
         cursor: pointer;
         text-align: center;
+        position: relative;
+        left: 20cm;
+        bottom: 1.1cm;
 
 }
 /* .bb{
@@ -103,3 +96,110 @@ body{
     bottom: 2px;
     left: 9px;
 } */
+@media screen and (max-width: 500px) {
+
+    .nav-bar{
+
+        background-color: rgba(255, 255, 255, 0.22);
+     
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter:blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        
+        width: 100%;
+        height: 2cm;
+        display: flex;
+    }
+    /* .m11{
+        display: block;
+        position: relative;
+        left: -20px;
+        
+        bottom: 1.2cm;
+    } */
+    
+    #ulman{
+        display: none;
+        position: relative;
+        right: 180px;
+        bottom: 1cm;
+        background-color: rgb(255, 255, 255);
+        height: 600px;
+        
+        /* background-color: rgba(255, 255, 255, 0.22); */
+ 
+        box-shadow: 0 1px 80px rgba(0, 0, 0, 0.1);
+       
+    }
+    #meenubutt1{
+        display: block;
+        width: 1.5cm;
+        height: 1cm;
+        /* display: none; */
+        cursor: pointer;
+        position: relative;
+        right: 2.9cm;
+        top: 0.5cm;
+    }
+
+    #meenubutt2{
+        display: none;
+        width: 1.5cm;
+        height: 1cm;
+        /* display: none; */
+        cursor: pointer;
+        position: relative;
+        right: 2.9cm;
+        top: 0.5cm;
+        z-index: +5;
+    }
+
+
+    .menlink{
+        text-decoration: none;
+        font-size: 0.6cm;
+        font-family: Arial black  ;
+        border-width: 5px;
+        color: rgb(255, 166, 0);
+        width: 4cm;
+        text-align: center;
+        border-radius: 20px;
+        height: 1cm;
+       
+    }
+    .menlink::after{
+
+        border-color: rgb(255, 196, 0);
+        background-color: rgb(255, 196, 0);
+        color: rgb(255, 255, 255);
+    }
+    .menli{
+        /* display: block; */
+        display: block;
+        padding: 20px;
+        position: relative;
+        top: 3cm;
+        left: 2cm;
+        
+    }
+    #m1{
+        background-color: rgb(255, 196, 2);
+           
+            width: 3cm;
+            height: 0.9cm;
+        
+            border-style: solid;
+            border-width: 0px;
+    
+            border-radius: 20px;
+            border-color: rgb(255, 196, 2);
+            font-size: 13px;
+            text-align: left ;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            left: 3cm;
+            bottom: 0.5cm;
+    
+    }
+}
