@@ -6,7 +6,7 @@ function Med(){
         <>
             <div className='meed'>
                 <div className='left-med'></div>   
-                <div className='right-med'>
+                <div className='right-med'> 
                         <img src={Me} className='mepic'/>
                         
                         {/* <div className='cir2'></div>
