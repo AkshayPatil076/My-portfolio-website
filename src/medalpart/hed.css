@@ -1,99 +1,38 @@
+.medpart{
+  display: flex;
+}
+.LEFT{
+  background-color: red;
+  width: 100%;
+  height: 21cm;
+}
+.RIGHT{
+  width: 100%;
+  height: 5cm;
+  /* background-color: aqua; */
+  z-index: -1;
+}
+.mypicphoto{
+  width: 20cm;
+  height: 23cm;
+  position: relative;
+  left: 10cm;
+  /* top: 0.1cm; */
+  /* top: -100px; */
+  /* border: solid black 100px; */
+  border-radius: 50%;
+  bottom: 2cm;
+  /* z-index: ; */
 
-.meed{
-    z-index: -1;
-    position: relative;
-    width: 100%;
-    height: 21cm;
-    display: flex;
-    position: relative;
-    bottom: 5cm;
-}
-.left-med{
-    width: 125%;
-    height: 20cm;
-    background-color: rgb(255, 128, 0);
-    border-radius: 0% 0% 100% 100% ;
-    position: relative;
-    top: 7cm;
-    left: 29cm;
-    z-index: -1;
-}
-.right-med{
-    width: 90%;
-    height: 5cm;
-    /* background-color: rgb(255, 128, 0); */
-}
-.mepic{
-    height: 25cm;
-    width: 140%;
-    position: relative;
-    /* bottom: 4cm; */
-    top: 1.5cm;
-    left: 8.8cm;
-    /* right: 1cm; */
-    border-radius: 50%;
 }
 .cir1{
-    background-color:  rgb(255, 179, 16);
-    width: 100%;
-    height: 15cm;
-    border-radius: 100%  ;
-    position: relative;
-    top: 10cm;
-    /* bottom: 24cm; */
-    z-index: -1;
-    right: 4.8cm;
-    display: flex;
-
-    filter: blur(50px);
-}
-@media screen and (max-width: 500px) {
-    .meed{
-        z-index: -1;
-        position: relative;
-        width: 100%;
-        height: 21cm;
-        display: flex;
-        position: relative;
-        bottom: 5cm;
-    }
-    .left-med{
-        width: 125%;
-        height: 20cm;
-        background-color: rgb(255, 128, 0);
-        border-radius: 0% 0% 100% 100% ;
-        position: relative;
-        top: 7cm;
-        left: 29cm;
-        z-index: -1;
-    }
-    .right-med{
-        width: 90%;
-        height: 5cm;
-        /* background-color: rgb(255, 128, 0); */
-    }
-    .mepic{
-        height: 25cm;
-        width: 140%;
-        position: relative;
-        /* bottom: 4cm; */
-        top: 1.5cm;
-        left: 8.8cm;
-        /* right: 1cm; */
-        border-radius: 50%;
-    }
-    .cir1{
-        background-color:  rgb(255, 179, 16);
-        width: 100%;
-        height: 15cm;
-        border-radius: 100%  ;
-        position: relative;
-        top: 10cm;
-        /* bottom: 24cm; */
-        z-index: -1;
-        right: 4.8cm;
-        display: flex;
-    
-        filter: blur(50px);
-    }
+  background-color: rgb(255, 187, 0);
+  width: 40cm;
+  filter: blur(10px);
+  position: relative;
+  top: 6cm;
+  right: 7cm;
+  height: 13cm;
+  border-radius: 50%;
+  z-index: -2;
 }
